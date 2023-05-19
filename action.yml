@@ -1,4 +1,4 @@
-name: "deterministic-zip"
+name: "run-deterministic-zip"
 description: "GitHub Action to integrate https://github.com/timo-reymann/deterministic-zip the easy way."
 author: "Timo Reymann <github@timo-reymann.de>"
 
