@@ -9,10 +9,18 @@ branding:
 inputs:
   args:
     description: Arguments to pass to deterministic-zip
+    required: false
+    default: ""
+  target:
+    description: Target file to create, including extension
+    required: true
+  source:
+    description: Sources to zip
+    required: true
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.args }}
+    - "-r ${{ inputs.target }} ${{ inputs.source }} ${{ inputs.args }}"
 
