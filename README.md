@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Build zip file
         with:
-          args: -r test.zip "."
+          source: .
+          target: my-archive.zip
+          # args: your additional arguments if required go here
 ```
 
