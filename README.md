@@ -14,5 +14,15 @@
 
 ## Usage
 
-> TBD
-<!-- List examples with YAML -->
+```yaml
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build zip file
+        with:
+          args: -r test.zip "."
+```
+
