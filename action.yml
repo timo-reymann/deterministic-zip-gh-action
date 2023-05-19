@@ -12,7 +12,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://timoreymann/deterministic-zip:latest'
+  image: 'Dockerfile'
   args:
     - ${{ inputs.args }}
 
