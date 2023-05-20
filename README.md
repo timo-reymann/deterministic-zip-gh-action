@@ -22,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build zip file
+        uses: timo-reymann/deterministic-zip-gh-action@v1
         with:
           source: .
           target: my-archive.zip
