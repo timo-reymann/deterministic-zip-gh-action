@@ -17,10 +17,15 @@ inputs:
   source:
     description: Sources to zip
     required: true
+  working-directory:
+    description: Working directory to run the container in
+    required: false
+    default: "."
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - "-r ${{ inputs.target }} ${{ inputs.source }} ${{ inputs.args }}"
+    - "{{ inputs.working-directory }}"
 
