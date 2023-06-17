@@ -1,4 +1,4 @@
 #!/bin/sh
-cd /github/workspace
+cd /github/workspace/$2
 ls -la
 deterministic-zip $1
