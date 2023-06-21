@@ -27,5 +27,5 @@ runs:
   image: 'Dockerfile'
   args:
     - "-r ${{ inputs.target }} ${{ inputs.source }} ${{ inputs.args }}"
-    - {{ inputs.working-directory }}
+    - "${{ inputs.working-directory }}"
 

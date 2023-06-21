@@ -26,6 +26,6 @@ jobs:
         with:
           source: .
           target: my-archive.zip
+          # working-directory: if required, set the working directory to run deterministic-zip from. By default it's `.`
           # args: your additional arguments if required go here
 ```
-
